@@ -9,8 +9,8 @@ import GridItem from "./grid-item"
 import { itemListWrapperStyles, itemStyles } from "@lekoarts/gatsby-theme-jodie/src/styles/item-list"
 import locales from "@lekoarts/gatsby-theme-jodie/src/locales"
 import { visuallyHidden } from "@lekoarts/gatsby-theme-jodie/src/styles/utils";
-import modifyGrid from "../../../utils/modify-grid"
-import Seo from "./seo"
+import modifyGrid from "@lekoarts/gatsby-theme-jodie/src/utils/modify-grid"
+import Seo from "@lekoarts/gatsby-theme-jodie/src/components/seo"
 
 export type JodieHomepageProps = {
   projects: {
