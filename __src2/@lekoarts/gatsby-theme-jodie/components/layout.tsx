@@ -2,10 +2,10 @@
 import { jsx, get } from "theme-ui"
 import * as React from "react"
 import { Global } from "@emotion/react"
-import Wrapper from "./layout-wrapper"
+import Wrapper from "@lekoarts/gatsby-theme-jodie/src/components/layout-wrapper"
 import Sidebar from "@lekoarts/gatsby-theme-jodie/src/components/sidebar"
 import Footer from "@lekoarts/gatsby-theme-jodie/src/components/footer"
-import { SkipNavTarget, SkipNavTrigger } from "./skip-nav"
+import { SkipNavTarget, SkipNavTrigger } from "@lekoarts/gatsby-theme-jodie/src/components/skip-nav"
 
 type LayoutProps = { children: React.ReactNode; color?: string }
 
