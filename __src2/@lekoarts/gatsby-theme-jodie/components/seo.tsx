@@ -1,7 +1,7 @@
 import * as React from "react"
 import { withPrefix } from "gatsby"
 import useSiteMetadata from "@lekoarts/gatsby-theme-jodie/src/hooks/use-site-metadata"
-
+s
 type Props = {
   title?: string
   description?: string
