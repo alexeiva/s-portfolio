@@ -6,6 +6,7 @@ import Logo from "/src/icons/logo"
 import useSiteMetadata from "@lekoarts/gatsby-theme-jodie/src/hooks/use-site-metadata"
 import useJodieConfig from "@lekoarts/gatsby-theme-jodie/src/hooks/use-jodie-config"
 import Navigation from "@lekoarts/gatsby-theme-jodie/src/components/navigation"
+import Icon from "/assets/logo2.svg";
 
 type SidebarProps = { bg: string }
 
@@ -33,7 +34,7 @@ const Sidebar = ({ bg }: SidebarProps) => {
       data-testid="sidebar"
     >
       <Link to={basePath} aria-label={`${siteTitle}, Back to Home`} sx={{ width: [`3rem`, `4rem`, `4.5rem`, `5rem`] }}>
-        <Logo />
+        <Icon />
       </Link>
       <div sx={{ py: 4, display: [`none`, `none`, `none`, `block`] }} />
       <Navigation bg={bg} />
