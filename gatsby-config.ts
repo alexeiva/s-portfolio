@@ -24,7 +24,7 @@ const config: GatsbyConfig = {
       // See the theme's README for all available options
       options: {
         mdx: true,
-        homepagePageLimit: 1,
+        homepagePageLimit: 0,
         homepageProjectLimit: 12,
         navigation: [
           { name: `Projects`, slug: `/projects` },

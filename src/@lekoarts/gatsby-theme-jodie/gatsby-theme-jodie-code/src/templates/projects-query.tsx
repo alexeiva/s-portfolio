@@ -1,5 +1,5 @@
 import { graphql } from "gatsby"
-import ProjectsComponent, { Head } from "../../../components/projects"
+import ProjectsComponent, { Head } from "src/@lekoarts/gatsby-theme-jodie/components/projects"
 
 export default ProjectsComponent
 

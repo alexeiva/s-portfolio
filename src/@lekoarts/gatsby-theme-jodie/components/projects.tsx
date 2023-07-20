@@ -6,8 +6,8 @@ import { IGatsbyImageData, GatsbyImage } from "gatsby-plugin-image"
 import Layout from "./layout"
 import Seo from "./seo"
 import GridItem from "./grid-item"
-import locales from "../locales"
-import { visuallyHidden } from "../styles/utils"
+import locales from "../../../locales"
+import { visuallyHidden } from "../../../styles/utils"
 
 export type JodieProjectsProps = {
   projects: {

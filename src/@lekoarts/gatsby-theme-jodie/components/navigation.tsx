@@ -2,8 +2,8 @@
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 import { readableColor } from "polished"
-import { replaceSlashes } from "../utils/replace-slashes"
-import useJodieConfig from "../hooks/use-jodie-config"
+import { replaceSlashes } from "../../../utils/replace-slashes"
+import useJodieConfig from "../../../hooks/use-jodie-config"
 
 const Navigation = ({ bg }: { bg: string }) => {
   const { navigation, basePath } = useJodieConfig()

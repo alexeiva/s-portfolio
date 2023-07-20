@@ -2,9 +2,9 @@
 import { jsx, get } from "theme-ui"
 import { Link } from "gatsby"
 import { readableColor } from "polished"
-import Logo from "../icons/logo"
-import useSiteMetadata from "../hooks/use-site-metadata"
-import useJodieConfig from "../hooks/use-jodie-config"
+import Logo from "../../../icons/logo"
+import useSiteMetadata from "../../../hooks/use-site-metadata"
+import useJodieConfig from "../../../hooks/use-jodie-config"
 import Navigation from "./navigation"
 
 type SidebarProps = { bg: string }
