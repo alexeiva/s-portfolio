@@ -19,6 +19,15 @@ const config: GatsbyConfig = {
   },
   trailingSlash: `never`,
   plugins: [
+    // Added new SVG Plugin
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/ // See below to configure properly
+        }
+      }
+    }
     {
       resolve: `@lekoarts/gatsby-theme-jodie`,
       // See the theme's README for all available options
