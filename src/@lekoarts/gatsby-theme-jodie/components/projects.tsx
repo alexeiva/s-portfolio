@@ -3,11 +3,11 @@ import { jsx } from "theme-ui"
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import { IGatsbyImageData, GatsbyImage } from "gatsby-plugin-image"
-import Layout from "./layout"
-import Seo from "./seo"
-import GridItem from "./grid-item"
-import locales from "../../../locales"
-import { visuallyHidden } from "../../../styles/utils"
+import Layout from "@lekoarts/gatsby-theme-jodie/src/components/layout"
+import Seo from "@lekoarts/gatsby-theme-jodie/src/components/seo"
+import GridItem from "@lekoarts/gatsby-theme-jodie/src/components/grid-item"
+import locales from "@lekoarts/gatsby-theme-jodie/src/locales"
+import { visuallyHidden } from "@lekoarts/gatsby-theme-jodie/src/styles/utils"
 
 export type JodieProjectsProps = {
   projects: {

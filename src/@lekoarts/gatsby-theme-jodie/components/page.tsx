@@ -2,8 +2,8 @@
 import { jsx } from "theme-ui"
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
-import Layout from "./layout"
-import Seo from "./seo"
+import Layout from "@lekoarts/gatsby-theme-jodie/src/components/layout"
+import Seo from "@lekoarts/gatsby-theme-jodie/src/components/seo"
 
 export type JodiePageProps = {
   page: {

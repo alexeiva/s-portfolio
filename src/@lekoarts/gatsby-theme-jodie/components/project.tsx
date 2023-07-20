@@ -4,8 +4,8 @@ import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import { transparentize } from "polished"
 import { IGatsbyImageData, GatsbyImage } from "gatsby-plugin-image"
-import Layout from "./layout"
-import Seo from "./seo"
+import Layout from "@lekoarts/gatsby-theme-jodie/src/components/layout"
+import Seo from "@lekoarts/gatsby-theme-jodie/src/components/seo"
 
 export type JodieProjectProps = {
   project: {
