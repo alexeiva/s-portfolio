@@ -8,14 +8,14 @@ const config: GatsbyConfig = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-jodie/gatsby-config.mjs
-    siteTitle: `Jodie`,
-    siteTitleAlt: `Jodie - Gatsby Starter Portfolio`,
-    siteHeadline: `Jodie - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://jodie.lekoarts.de`,
-    siteDescription: `Image-heavy photography portfolio with colorful accents & customizable pages. Includes adaptive image grids powered by CSS grid and automatic image integration into projects.`,
+    siteTitle: `Alexei Vanyashin Typography`,
+    siteTitleAlt: `Portfolio of Alexei Vanyashin`,
+    siteHeadline: `Alexei Vanyashin — Graphic and Type Design`,
+    siteUrl: `http://110design.ru`,
+    siteDescription: `Personal portfolio of Alexei Vanyashin.`,
     siteImage: `/banner.jpg`,
     siteLanguage: `en`,
-    author: `@lekoarts_de`,
+    author: `@alexeiva`,
   },
   trailingSlash: `never`,
   plugins: [
@@ -23,9 +23,13 @@ const config: GatsbyConfig = {
       resolve: `@lekoarts/gatsby-theme-jodie`,
       // See the theme's README for all available options
       options: {
+        mdx: true,
+        homepagePageLimit: 0,
+        homepageProjectLimit: 12,
         navigation: [
           { name: `Projects`, slug: `/projects` },
-          { name: `Art`, slug: `/art` },
+          { name: `Music`, slug: `/music` },
+          { name: `Services`, slug: `/service` },
           { name: `About`, slug: `/about` },
         ],
       },
