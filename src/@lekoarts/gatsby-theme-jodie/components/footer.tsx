@@ -35,21 +35,21 @@ const Footer = ({ bg }: { bg: string }) => {
       }}
     >
       <div>
-        &copy; {new Date().getFullYear()} by {siteTitle}.
+        &copy; {new Date().getFullYear()} by {siteTitle}
       </div>
       <div>
         <Link
           aria-label="Link to the theme's GitHub repository"
-          href="https://github.com/LekoArts/gatsby-themes/tree/main/themes/gatsby-theme-jodie">
-          Website
+          href="https://github.com/alexeiva">
+          github
         </Link>
         {` `}
-        by
+        |
         {` `}
         <Link
           aria-label="Link to the theme author's website"
-          href="https://www.lekoarts.de?utm_source=jodie&utm_medium=Theme">
-          Cyreal - updated 2023
+          href="http://cyreal.org">
+          Cyreal Type Foundry
         </Link>
       </div>
     </footer>

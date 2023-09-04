@@ -11,3 +11,17 @@
   font-family: 'Recursive';
   font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" -10, "CRSV" 1;
 }
+
+td {
+  text-align: left;
+  //border: 1px solid red;
+  padding: 5px 10px 0px 0px;
+}
+
+h4.css-1chlwha {
+  margin: 20px 0 0 0;
+}
+
+th.css-zezy6m {
+  text-align: left;
+}
