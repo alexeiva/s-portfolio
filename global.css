@@ -6,9 +6,16 @@
   src: url(static/fonts/Recursive-VariableFont_CASL,CRSV,MONO,slnt,wght.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=Nabla:EDPT,EHLT@100,12;158,23&family=Rubik:wght@300&display=swap');
+}
 
 .italic {
-  font-family: 'Recursive';
+  font-family: 'Rubik', 'Recursive';
   font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" -10, "CRSV" 1;
 }
 
@@ -24,4 +31,179 @@ h4.css-1chlwha {
 
 th.css-zezy6m {
   text-align: left;
+  min-width: 100px;
+}
+
+.css-owdjxl a {
+  color: #209ed0 !important;
+}
+
+a:-webkit-any-link {
+  color: #209ed0;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+a {
+  text-decoration: none;
+  line-height: 1.7em;
+  color: #209ed0;
+  border-bottom: 1px solid #209ed0;
+  //transition: all 0.1s ease-in;
+  padding: 0.1em 0.2em;
+  border-radius: 4px 4px 0 0;
+  //box-shadow: inset 0 -4px 0 #ef8b80;
+  color: inherit;
+  transition: background 0.3s cubic-bezier(.33,.66,.66,1);
+}
+
+a:hover {
+  border-bottom-color:  #1b7ba2;
+  text-decoration: none;
+  background: #c5dbe8;
+}
+
+div.fontlist > a, a.fontlist {
+  border-bottom: 0px solid #209ed0;
+  border-radius: 3px 3px 3px 3px;
+  border: 1px solid #dddddd;
+  padding: 0px 6px; 
+  background: #eeeee4;
+  color: #209ed0;
+}
+div.fontlist > a:hover, a.fontlist:hover {
+  background: #c5dbe8;
+  color: #209ed0;
+}
+
+a.link {
+  text-decoration: none !important;
+  border-bottom: 0px solid #f6c248;
+  color: black;
+  cursor: pointer;
+}
+
+.link {
+  position: relative;
+  text-decoration: none;
+  transition: -webkit-clip-path 275ms ease;
+  transition: clip-path 275ms ease;
+  transition: clip-path 275ms ease, -webkit-clip-path 275ms ease;
+  padding: 0;
+  border-radius: 4px 4px 0 0;
+}
+.link:hover span::before, .link:focus span::before {
+  background: #c7e8c5;
+  border-radius: 4px 4px 0 0;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.link span {
+  position: relative;
+  display: inline-block;
+  color: #209ed0;
+}
+.link span::before {
+  position: absolute;
+  content: attr(data-content);
+  color: rgb(22, 203, 64);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  -webkit-text-decoration-color: #16cb31;
+          text-decoration-color: #16cb31;
+  -webkit-clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+          clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+  transition: -webkit-clip-path 275ms ease;
+  transition: clip-path 275ms ease;
+  transition: clip-path 275ms ease, -webkit-clip-path 275ms ease;
+}
+
+span.dotted::before {
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+}
+
+span.wavy::before {
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
+}
+
+
+::selection {
+  background: var(--theme-ui-colors-teal-5) !important;
+  color: var(--theme-ui-colors-white)!important;
+}
+
+
+.css-l4fqv8-Navigation a:hover, .css-l4fqv8-Navigation a:focus {
+  color: var(--theme-ui-colors-teal-7) !important;
+  transition: all 0.1s ease-in;
+}
+
+
+.css-18sjung-Footer a:hover, .css-18sjung-Footer a:focus {
+  color: var(--theme-ui-colors-teal-7) !important;
+  transition: all 0.1s ease-in;
+}
+
+a.css-1cesdng-Sidebar:hover {
+  background: none !important;
+}
+
+a.css-1l6x1h3-GridItem, a.css-1iz76wy-Homepage, a.item, a.css-1cesdng-Sidebar {
+  border-bottom: 0px solid #f6c248;
+}
+
+
+html{
+  --theme-ui-colors-primary: #209ed0 !important;
+}
+
+.css-1l6x1h3-GridItem >span {
+  z-index: 10;
+  color: var(--theme-ui-colors-white);
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: right;
+  font-weight: 400 !important;
+  font-size: 0.5rem;
+  padding: 1rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+html {
+  background-color: #f5f5ea !important;
+}
+
+header.css-1doov27-Sidebar, footer, header.css-1skwv5z-Sidebar{
+  background-color: #e0e0d5 !important;
+}
+
+nav.css-19x1yef-Navigation a{
+  border-bottom: 2px solid #209ed0;
+}
+
+
+span.blockspam {
+  display: none;
+}
+
+dd.music {
+  padding: 10px 0;
+}
+
+li.css-zezy6m {
+  list-style: circle;
+}
+
+dl.dl-list dt{
+  padding: 5px 0;
+  font-size: 12px;
+  margin: 0;
+}
+
+dl.dl-list dd{
+  padding-left: 10px;
+  margin: -5px 0 0 0;
 }

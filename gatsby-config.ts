@@ -19,7 +19,73 @@ const config: GatsbyConfig = {
   },
   trailingSlash: `never`,
   plugins: [
+    {
+      resolve: `@lekoarts/gatsby-theme-jodie`,
+      // See the theme's README for all available options
+      options: {
+        mdx: false,
+        homepagePageLimit: -1,
+        homepageProjectLimit: 12,
+        navigation: [
+          { name: `Projects`, slug: `/projects` },
+          { name: `Music`, slug: `/music` },
+          { name: `Services`, slug: `/services` },
+          { name: `Resources`, slug: `/resources` },
+          { name: `About`, slug: `/about` },
+          { name: `Contact`, slug: `/contact` },
+        ],
+      },
+    },
+  /*
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        mdxOptions: {
+          remarkPlugins: [
+            // Add GitHub Flavored Markdown (GFM) support
+            remarkGfm,
+          ],
+        },
+      },
+    },
+  */
+
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+        gatsbyRemarkPlugins: [
+          // Add GitHub Flavored Markdown (GFM) support
+          //`remarkGfm`,
+          {
+            resolve: "gatsby-remark-copy-linked-files",
+            options: {
+              // `ignoreFileExtensions` defaults to [`png`, `jpg`, `jpeg`, `bmp`, `tiff`]
+              // as we assume you'll use gatsby-remark-images to handle
+              // images in markdown as it automatically creates responsive
+              // versions of images.
+              //
+              // If you'd like to not use gatsby-remark-images and just copy your
+              // original images to the public directory, set
+              // `ignoreFileExtensions` to an empty array.
+              ignoreFileExtensions: [],
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1400,
+              linkImagesToOriginal: false,
+            },
+          },
+        ],
+      },
+    },
+  
+    /*
+    `gatsby-plugin-sharp`,
     // gatsby video
+    /*
     {
       resolve: `gatsby-remark-videos`,
       options: {
@@ -52,18 +118,12 @@ const config: GatsbyConfig = {
         ],
       }
     },
+    */
     // plugin to copy linked files
     {
       resolve: `gatsby-remark-copy-linked-files`,
       options: {},
     },
-    // Added new GIF Plugin
-    //{
-    //    resolve: "gatsby-transformer-remark",
-    //    options: {
-    //        plugins: ["gatsby-remark-gifs"],
-    //    },
-    //},
     // Added new SVG Plugin
     {
       resolve: "gatsby-plugin-react-svg",
@@ -73,21 +133,13 @@ const config: GatsbyConfig = {
         }
       }
     },
-    {
-      resolve: `@lekoarts/gatsby-theme-jodie`,
-      // See the theme's README for all available options
-      options: {
-        mdx: true,
-        homepagePageLimit: -1,
-        homepageProjectLimit: 12,
-        navigation: [
-          { name: `Projects`, slug: `/projects` },
-          { name: `Music`, slug: `/music` },
-          { name: `Services`, slug: `/service` },
-          { name: `About`, slug: `/about` },
-        ],
-      },
-    },
+    // Added new GIF Plugin
+    //{
+    //    resolve: "gatsby-transformer-remark",
+    //    options: {
+    //        plugins: ["gatsby-remark-gifs"],
+    //    },
+    //},
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
@@ -97,9 +149,9 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `jodie - @lekoarts/gatsby-theme-jodie`,
-        short_name: `jodie`,
-        description: `Image-heavy photography portfolio with colorful accents & customizable pages. Includes adaptive image grids powered by CSS grid and automatic image integration into projects.`,
+        name: `alexeiva`,
+        short_name: `alexeiva`,
+        description: `Portfolio of Alexei Vanyashin, type design and typography.`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website

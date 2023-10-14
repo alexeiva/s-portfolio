@@ -1,5 +1,19 @@
 // gatsby-config.mjs
+import remarkGfm from "remark-gfm"
 const config = {
+  plugins: [
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        mdxOptions: {
+          remarkPlugins: [
+            // Add GitHub Flavored Markdown (GFM) support
+            remarkGfm,
+          ],
+        },
+      },
+    },
+  ],
   siteMetadata: {
     // Used for the title template on pages other than the index site
     siteTitle: `Alexei Vanyashin — Portrolio`,
