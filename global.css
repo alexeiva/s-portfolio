@@ -44,8 +44,14 @@ a:-webkit-any-link {
   text-decoration: none !important;
 }
 
+.css-1cesdng-Sidebar a, .css-1cesdng-Sidebar a:hover, .css-19u3j9m a, div.css-afwzhj a{
+  text-decoration: none !important;
+  border-bottom: 0px !important;
+  background: none;
+}
+
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   line-height: 1.7em;
   color: #209ed0;
   border-bottom: 1px solid #209ed0;
