@@ -18,7 +18,7 @@
   "dependencies": {
     "@lekoarts/gatsby-theme-jodie": "^5.0.4",
     "@mdx-js/react": "^3.0.0",
-    "gatsby": "^5.10.0",
+    "gatsby": "^5.14.0",
     "gatsby-plugin-ffmpeg": "^0.6.4",
     "gatsby-plugin-image": "^3.12.1",
     "gatsby-plugin-manifest": "^5.10.0",
