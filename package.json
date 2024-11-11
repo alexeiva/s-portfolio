@@ -8,6 +8,7 @@
   "starter-name": "gatsby-starter-portfolio-jodie",
   "scripts": {
     "build": "gatsby build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "develop": "gatsby develop",
     "develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop",
     "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
@@ -46,6 +47,7 @@
     "@types/react": "^18.2.9",
     "@types/react-dom": "^18.2.4",
     "cross-env": "^7.0.3",
+    "gh-pages": "^6.2.0",
     "typescript": "^4.9.5"
   }
 }
